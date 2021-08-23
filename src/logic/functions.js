@@ -63,6 +63,7 @@ export const removeSelectedCard = (game, setgame) => {
   }
 };
 
+
 //Enables the dragging of chosen cards.
 export const dragStart = (event, card, deck, game, setgame) => {
   const x = event.pageX;
