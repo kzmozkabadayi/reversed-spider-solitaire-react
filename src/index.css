@@ -1,0 +1,41 @@
+/* General features */
+
+:root{
+    --primary: #1959a0;
+    --secondary: #d889a1;
+    --dark: #212121;
+    --light: #F3F3F3;
+    --general:#ffffff;
+}
+
+* {
+  margin: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue","Montserrat",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.screencontroller {
+  display: none;
+}
+
+@media screen and (orientation: portrait) {
+  .gameplay {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+  .screencontroller {
+    display: block;
+  }
+}
+

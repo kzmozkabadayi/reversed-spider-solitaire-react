@@ -1,0 +1,86 @@
+/* Card Design Section */
+
+.card {
+  position: relative;
+  border: 1px solid var(--dark);;
+  cursor: pointer;
+  width: 7vw;
+  height: 9.8vw;
+  border-radius: 0.3vw;
+
+    .card-rank-left {
+      text-align: left;
+      margin-left: 0.2vw;
+      font-size:25px;
+      font-weight: 700;
+    }
+
+    .card-suite-left {
+      text-align: right;
+      font-size:25px;
+      font-weight: 700;
+      bottom:33px;
+      position: relative;
+      margin-right: 5px;
+    }
+
+    .card-suite {
+      text-align: center;
+    }
+}
+  .card-down {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../assets/card-background.png");
+      text-decoration: transparent;
+      margin-bottom: -8.5vw;
+      background-color: var(--general);
+    
+
+    .card-content {
+      visibility: hidden;
+    }
+  }
+
+    .card-remcards {
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+
+
+
+    .card-stack {
+      margin-bottom: -7vw;
+      transition: all 2s smooth;
+    }
+
+    .card-highlighted {
+      box-shadow: 5px 5px 10px rgb(54, 51, 226) !important;
+    }
+
+    .spade {
+      background: url("../assets/spade.png") var(--general);;
+      color: var(--dark);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+    }
+
+
+@media screen and (max-width: 1390px) and (min-width: 1200px) {
+  .card-content {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 781px) {
+  .card-content {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .card-content {
+    font-size: 7.5px;
+  }
+}

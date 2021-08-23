@@ -1,0 +1,19 @@
+/* OneSuite Page Design Section */
+
+.onesuite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10% 0;
+}
+
+.onesuite-main{
+  padding-top: 20px;
+}
+
+
+.onesuite-main .menu-part{
+  display: flex;
+  align-items: baseline;
+  padding-left: 20px;
+}

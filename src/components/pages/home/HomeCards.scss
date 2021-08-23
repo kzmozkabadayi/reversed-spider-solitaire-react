@@ -1,0 +1,315 @@
+  .cardRotation {
+    perspective: 1000px;
+    display: flex;
+    justify-content: space-around;
+
+    &:hover .card-inner, .cardRotation.hover .card-inner {
+      -webkit-transform: rotateY(180deg);
+    }
+  
+    &:hover .card-inner-second, .cardRotation.hover .card-inner-second {
+      -webkit-transform: rotateY(180deg);
+    }
+  
+    &:hover .card-inner-third, .cardRotation.hover .card-inner-third {
+      -webkit-transform: rotateY(180deg);
+    }
+  
+    .card-inner-section{
+      display: flex;
+    
+      .card-inner{
+        width: 400px;
+        height: 600px;
+        -webkit-transition: 1s;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        margin-left: 100px;
+        align-items: center;
+
+        .card-face {
+          position: absolute;
+          width: 60%;
+          height: 60%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          overflow: hidden;
+          border-radius: 16px;
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-face-front {
+          background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+            .king{
+              display: block;
+              width: 80%;
+              height: 80%;
+              border-radius: 10%;
+              background-color: var(--general);
+              border: 5px solid var(--general);
+              object-fit: cover;
+            }
+        }
+
+        .card-face-back {
+          background-color: var(--light);
+          -webkit-transform: rotateY(180deg);
+
+          .card-content {
+            width: 100%;
+            height: 100%;
+
+            .card-header {
+              position: relative;
+              padding: 30px 30px 40px;
+
+              p{
+                color: var(--general);
+                font-size: 24px;
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: center;
+                border: none;
+              }
+
+              &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+                z-index: -1;
+                border-radius: 0px 0px 50% 0px;            
+              }
+            }
+            .card-body {
+              padding: 25px;
+
+              p {
+                border: none;
+                color: var(--dark);
+                font-size: 18px;
+                line-height: 1.4;
+                font-family: 'Montserrat', sans-serif;
+              }
+            }
+            .card-button-play{
+              padding-top: 20px;
+
+              .letsplay-button{
+                padding: 10px;
+                background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+                color: var(--general);
+                font-size: 15px;
+                outline: 0;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+
+      }
+
+      .card-inner-second{
+        width: 400px;
+        height: 600px;
+        -webkit-transition: 1s;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        margin-left: 100px;
+        align-items: center;
+
+        .card-face {
+          position: absolute;
+          width: 60%;
+          height: 60%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          overflow: hidden;
+          border-radius: 16px;
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-face-front {
+          background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+            .queen{
+              display: block;
+              width: 80%;
+              height: 80%;
+              border-radius: 10%;
+              background-color: var(--general);
+              border: 5px solid var(--general);
+              object-fit: cover;
+            }
+         }
+
+        .card-face-back {
+          background-color: var(--light);
+          -webkit-transform: rotateY(180deg);
+
+          .card-content {
+            width: 100%;
+            height: 100%;
+
+            .card-header {
+              position: relative;
+              padding: 30px 30px 40px;
+
+              p{
+                color: var(--general);
+                font-size: 24px;
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: center;
+                border: none;
+              }
+
+              &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+                z-index: -1;
+                border-radius: 0px 0px 50% 0px;
+              }
+            }
+            .card-body {
+              padding: 20px;
+
+              p {
+                border: none;
+                color: var(--dark);
+                font-size: 18px;
+                line-height: 1.4;
+                font-family: 'Montserrat', sans-serif;
+              }
+            }
+            .card-button-rule{
+              padding-top: 20px;
+
+              .gamerules-button{  
+                padding: 10px;
+                background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+                color: var(--general);
+                font-size: 15px;
+                outline: 0;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+
+    }
+      .card-inner-third {
+      width: 400px;
+      height: 600px;
+      -webkit-transition: 1s;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      margin-left: 100px;
+      align-items: center;
+
+      .card-face {
+          position: absolute;
+          width: 60%;
+          height: 60%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          overflow: hidden;
+          border-radius: 16px;
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-face-front {
+          background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+            .joker {
+              display: block;
+              width: 80%;
+              height: 80%;
+              border-radius: 10%;
+              background-color: var(--general);
+              border: 5px solid var(--general);
+              object-fit: cover;
+            }
+        }
+
+        .card-face-back {
+          background-color: var(--light);
+          -webkit-transform: rotateY(180deg);
+
+          .card-content {
+            width: 100%;
+            height: 100%;
+
+            .card-header {
+              position: relative;
+              padding: 30px 30px 40px;
+
+              p{
+                color: var(--general);
+                font-size: 24px;
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: center;
+                border: none;
+              }
+
+              &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+                z-index: -1;
+                border-radius: 0px 0px 50% 0px;
+              }
+            }
+            .card-body {
+              padding: 20px;
+
+              p {
+                border: none;
+                color: var(--dark);
+                font-size: 18px;
+                line-height: 1.4;
+                font-family: 'Montserrat', sans-serif;
+                padding-top: 30px;
+              }
+            }
+          }
+        }
+
+    } 
+  }
+}

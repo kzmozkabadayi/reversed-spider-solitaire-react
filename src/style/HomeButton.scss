@@ -1,0 +1,14 @@
+/* Home Page Button Design Section*/
+
+.home-button-part{
+  display: flex;
+  align-items: baseline;
+
+  .home-button {
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    background: none;
+    color: var(--general);
+    font-family: "Montserrat", Sans-serif;}
+}
