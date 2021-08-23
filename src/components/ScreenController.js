@@ -1,7 +1,6 @@
 import React from "react";
 import "../../src/style/ScreenController.scss";
 
-
 function ScreenController() {
   return (
     <div className="screencontroller">
