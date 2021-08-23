@@ -1,6 +1,7 @@
 import React from 'react';
 import "../../src/style/Timer.scss";
 
+
 const Timer = ({minSecs}) => {
    
     const { minutes = 0, seconds = 0 } = minSecs;
