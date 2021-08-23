@@ -67,7 +67,7 @@
 
         it('should have some messages for game features on gamerules page',() =>{
 
-            cy.get('.rules-information').contains('The cards must always be arranged in order A, 2, 3, 4, 5, 6, 7, 8 ,9 , 10, J, Q, K.');
+            cy.get('.rules-information').contains('The cards must always be arranged in order A, 2, 3, 4, 5, 6, 7, 8 ,9 , 10, J, Q, K');
 
         });
 
