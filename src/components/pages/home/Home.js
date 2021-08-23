@@ -3,7 +3,6 @@ import Header from "./Header";
 import ScreenSizeWarn from "../../ScreenController";
 import HomeCards from "./HomeCards";
 
-
 function Home() {
   return (
     <>

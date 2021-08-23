@@ -5,7 +5,6 @@ import imageQueen from "../../../assets/snape-queen.png";
 import imageJoker from "../../../assets/snape-joker.png";
 import {Link} from "react-router-dom";
 
-
 function HomeCards(){
     return (
         <>
