@@ -16,7 +16,7 @@ npm run build
 ```
 ## Demo
 
-[Reversed Spider Solitaire]
+[Reversed Spider Solitaire](https://live-demo-reversed-solitaire.herokuapp.com/)
 
 ## Preview Web Pages
 ### Home Page Section
