@@ -1,6 +1,7 @@
 import React from "react";
 import "../../src/style/RestartButton.scss";
 
+
 function reload() {
   window.location.reload();
 }
