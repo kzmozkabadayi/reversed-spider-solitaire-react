@@ -3,9 +3,9 @@
 */
     <references types = "cypress"/>
 
-    const SOLITAIRE_HOMEPAGE_URL = 'http://localhost:3000/';
-    const SOLITAIRE_GAMERULES_URL = 'http://localhost:3000/game-rules';
-    const SOLITAIRE_GAME_URL = 'http://localhost:3000/one-suite';
+    const SOLITAIRE_HOMEPAGE_URL = 'https://live-demo-reversed-solitaire.herokuapp.com/';
+    const SOLITAIRE_GAMERULES_URL = 'https://live-demo-reversed-solitaire.herokuapp.com/game-rules';
+    const SOLITAIRE_GAME_URL = 'https://live-demo-reversed-solitaire.herokuapp.com/one-suite';
 
 
     describe('homepage-tests', () =>{
