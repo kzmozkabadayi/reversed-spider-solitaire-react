@@ -5,7 +5,6 @@ import HomeButton from "../../HomeButton";
 import RulesInformation from "./RulesInformation";
 
 
-
 function GameRules() {
     return(
         <> 
