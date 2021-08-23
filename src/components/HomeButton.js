@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../src/style/HomeButton.scss";
 
 
+
 function HomeButton() {
   return (
     <div className="home-button-part">
